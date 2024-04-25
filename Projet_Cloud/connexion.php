@@ -6,7 +6,6 @@ $password = 'Cafenoir12';
 $database = 'gestion';
 
 $conn = new mysqli($host, $username, $password, $database);
-mysqli_set_charset($conn, "latin1_swedish_ci");
 
 if ($conn->connect_error) {
     die("Erreur de connexion à la base de données : " . $conn->connect_error);
